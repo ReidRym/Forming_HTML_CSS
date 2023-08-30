@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
     <title>html form</title>
   </head>
+  <!-- header -->
+  <header>
+    <img src="img/r logo.JPG" alt="R logo" />
+  </header>
   <body>
     <h1>HTML Forms</h1>
     <form>
+      <!-- Gender -->
+      <p>You are a...</p>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
+      <input type="radio" id="not answer" name="gender" />
+      <label for="not answer">Not Answer</label>
+      <br /><br />
+      <!-- user info -->
       <label for="username">enter username:</label>
       <input
         type="text"
@@ -26,6 +41,17 @@
         required
       />
       <br /><br />
+      <label for="phone number">Phone Number</label>
+      <input
+        type="telephone"
+        id="phone number"
+        name="phone number"
+        placeholder="Phone number"
+        required
+      />
+
+      <br /><br />
+
       <label for="password">enter password</label>
       <input
         type="password"
@@ -64,6 +90,16 @@
 
       <br /><br />
 
+      <!-- Interests -->
+      <p>Who is interested in...</p>
+      <input type="checkbox" id="web" />
+      <label for="web">Web development</label><br />
+      <input type="checkbox" id="self defense" />
+      <label for="self defense">Self Defense</label><br />
+      <input type="checkbox" id="drumming" />
+      <label for="drumming">Drumming</label>
+      <br /><br />
+
       <!-- text area -->
       <label for="bio">Your Bio:</label><br />
 
@@ -74,10 +110,16 @@
         rows="10"
         placeholder="about you.."
       ></textarea>
+      <br /><br />
+      <!-- Preferred -->
+      <p>How would you like to be contacted?</p>
+      <select>
+        <option>By email</option>
+        <option>By telephone</option>
+      </select>
+      <input type="submit" value="Become a member" />
       <!-- submit button -->
       <br /><br />
-
-      <input type="submit" value="submit the form" />
     </form>
   </body>
 </html>
