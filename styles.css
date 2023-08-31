@@ -54,6 +54,29 @@ input:checked + label[for="male"],
         background-position: 0 0;
         color: #11a6e6; 
 }
+
+input[type="radio"]{
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+label[for="Option-1"], label[for="Option-2"], label[for="Option-3"]{
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 26px;
+    background: url(img/checks.png) no-repeat;
+    background-position: 0 -32px;
+    line-height: 24px;
+    cursor: pointer;
+}
+input:checked + label[for="Option-1"],
+    input:checked + label[for="Option-2"],
+    input:checked + label[for="Option-3"] {
+        background-position: 0 0;
+        color: #11a6e6; 
+}
+
+
 /* checkbox style */
 input[type="checkbox"]{
     opacity: 0;
@@ -73,4 +96,32 @@ input:checked + label[for="web"],
     input:checked + label[for="drumming"] {
         background-position: 0 -66px;
         color: #11a6e6; 
+}
+/* text input boxes */
+fieldset{
+    padding: 20px;
+    margin: 20px 0;
+    border: 3px solid #222;
+}
+legend{
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+input[type="text"], input[type="email"], input[type="telephone"], input[type="password"]{
+display: block;
+margin-bottom: 20px; 
+padding: 10px 10px 10px 50px;
+border: 0;
+border-radius: 4px;
+background: url(img/inputs.png) no-repeat;
+background-color: #222;
+font-size: 16px;
+color: #fff;
+}
+input[type="email"]{
+    background-position: 7px 8px;
+}
+input[type="telephone"]{
+    background-position: 7px -58px;
 }
