@@ -53,6 +53,7 @@
           id="phone number"
           name="phone number"
           placeholder="Phone number"
+          required
         />
         <span class="tick"></span>
 
@@ -83,22 +84,6 @@
     </fieldset>
       <br /><br />
 
-      <!--    select fields -->
-      <fieldset>
-      <label for="question">Security Question</label>
-      <select name="question" id="question">
-        <option value="q1">What is the name of your favorite band?</option>
-        <option value="q2">What is your person?</option>
-        <option value="q3">What is your favorite food?</option>
-        <br /><br />
-      </select>
-
-      <br /><br />
-
-      <label for="answer">Security Answer</label>
-      <input type="text" id="answer" name="answer" />
-    </fieldset>
-      <br /><br />
 
       <!-- Interests -->
       <p>Who is interested in...</p>
@@ -111,6 +96,7 @@
       <br /><br />
 
       <!-- text area -->
+      <fieldset>
       <label for="bio">Your Bio:</label><br />
 
       <textarea
@@ -118,14 +104,15 @@
         id="bio"
         cols="30"
         rows="10"
-        placeholder="about you.."
+        placeholder="About You.."
       ></textarea>
+    </fieldset>
       <br /><br />
       <!-- Preferred -->
-      <p>How would you like to be contacted?</p>
-      <select>
-        <option>By email</option>
-        <option>By telephone</option>
+      <p>How would you like to be Contacted?</p>
+      <select class="contact">
+        <option>By Email</option>
+        <option>By Telephone</option>
       </select>
       <input type="submit" value="Become a member" />
       <!-- submit button -->
