@@ -180,7 +180,7 @@ select{
     width: 280px;
 }
 /* submit button */
-input[type="submit"]{
+/* input[type="submit"]{
     background: #11a6e6;
     padding: 15px;
     color: #fff;
@@ -191,7 +191,7 @@ input[type="submit"]{
     box-shadow:1px 3px 5px rgba(0,0,0,0.5);
     width: 280px;
     margin-left: 16px;
-}
+} */
 
 /* input validation styles */
 input[type="email"]:valid,
@@ -225,6 +225,74 @@ width: 20px;
 height: 20px;
 float: left;
 margin:10px;
+  }
+  .container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 7vh;
+  }
+  a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    margin-left: 25px;
+  }
+  .btn{
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(69, 180, 236, 0.4);
+    border-radius: 4px;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+  
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
+  .contact{
+    text-decoration: none;
+    border: 1px solid rgb(10, 111, 213);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact:hover {
+    box-shadow: 1px 1px 25px 10px rgba(69, 180, 236, 0.4);
+    border-radius: 4px;
+  }
+  
+  .contact:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+  }
+.contact:hover:before {
+    left: 100%;
   }
  
 
