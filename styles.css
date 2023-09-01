@@ -28,6 +28,8 @@ header h1 {
 form {
   margin: 20px;
   color: #eee;
+    font-size: 18px;
+    
 }
 form p {
   font-size: 18px;
@@ -299,3 +301,78 @@ a {
 #bio:focus {
     transform: perspective(1000px) rotateY(3deg) scale(1.1);
 }
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    body {
+      background: #141414;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    header {
+      background: #0d0d0d;
+      padding: 20px;
+    }
+  
+    header img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10px;
+    }
+  
+    /* Add your other styles for mobile here */
+  }
+  
+  /* For tablets: */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+      background: #141414;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    header {
+      background: #0d0d0d;
+      padding: 20px;
+    }
+  
+    header img {
+      width: 70%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10px;
+    }
+  
+ 
+  }
+  
+  /* For desktop: */
+  @media only screen and (min-width: 1025px) {
+    body {
+      background: #141414;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    header {
+      background: #0d0d0d;
+      padding: 20px;
+    }
+  
+    header img {
+      width: 300px;
+      height: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 10px;
+    }
+  
+
+  }
